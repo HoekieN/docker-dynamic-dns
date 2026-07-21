@@ -19,7 +19,7 @@ jobs:
 
       
     steps:
-    - uses: actions/checkout@v6.0.3
+    - uses: actions/checkout@v7.0.0
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag docker-dynamic-dns:$(date +%s)
 
